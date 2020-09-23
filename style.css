@@ -9,14 +9,14 @@
     section
     {
         height: 100vh;
-        z-index: 2;
+
     }
     body
     {
         overflow: hidden;
         height: 100vh;
         background: #5469E0;
-        z-index: 5;
+
     }
 
 
@@ -27,7 +27,7 @@
         pointer-events: none;
         background: #fff;
         animation: animate 5s linear infinite;
-        z-index: 2;
+
     }
 
     @keyframes animate
