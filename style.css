@@ -1,4 +1,62 @@
-.Bienvenue
+
+/**
 {
-    color: blue;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }*/
+
+    section
+    {
+        height: 100vh;
+        z-index: 2;
+    }
+    body
+    {
+        overflow: hidden;
+        height: 100vh;
+        background: #5469E0;
+        z-index: 5;
+    }
+
+
+
+    span
+    {
+        position: absolute;
+        pointer-events: none;
+        background: #fff;
+        animation: animate 5s linear infinite;
+        z-index: 2;
+    }
+
+    @keyframes animate
+    {
+        0%
+        {
+            transform: scale(1) translateY(0) rotate(180deg);
+            opacity: 0%
+        }
+
+        10%
+        {
+            opacity: 100%
+        }
+
+        90%
+        {
+            opacity: 95%
+        }
+        100%
+        {
+            transform: scale(0.5) translateY(3000%) rotate(0deg);
+            opacity: 0
+        }
+
+
+    }
+    .Bienvenue
+    {
+        color: blue;
+        font-family: : "Comic Sans MS" ;
+    }
