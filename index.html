@@ -24,25 +24,29 @@
         </figure>
 
 
- <section></section>
-    <script type="text/javascript">
 
-        const colors =
-        [
-        '#54C8E0',
-        '#54C87C',
-        '#8CBADF'
-        ]
-        function createSquare() {
-            const section = document.querySelector('section');
-            const square = document.createElement('span');
 
-            var size = Math.random() * 10;
-            square.style.width = 10 + size + 'px';
-            square.style.height = 10 + size + 'px';
+</body>
+        <p class="anim">
+           <section></section>
+           <script type="text/javascript">
+
+            const colors =
+            [
+            '#54C8E0',
+            '#54C87C',
+            '#8CBADF'
+            ]
+            function createSquare() {
+                const section = document.querySelector('section');
+                const square = document.createElement('span');
+
+                var size = Math.random() * 10;
+                square.style.width = 10 + size + 'px';
+                square.style.height = 10 + size + 'px';
             //square.style.position = "left";
-            square.style.top = Math.random() * innerHeight + 'px';
-            square.style.left = Math.random() * innerWidth + 'px';
+            square.style.top = 1.2* Math.random() * innerHeight + 'px';
+            square.style.left = 1.2* Math.random() * innerWidth + 'px';
 
             square.style.background = colors[Math.floor(Math.random() * colors.length)];
             section.appendChild(square);
@@ -59,8 +63,6 @@
 
 
     </script>
-
-    </body>
-
-    </html>
+</p>
+</html>
 

@@ -9,25 +9,25 @@
     section
     {
         height: 100vh;
-
+        /*z-index: 1;*/
     }
+
     body
     {
+        position: absolute;
         overflow: hidden;
         height: 100vh;
         background: #5469E0;
-
+        /*z-index: 3;*/
     }
-
-
 
     span
     {
+        z-index: -1;
         position: absolute;
         pointer-events: none;
         background: #fff;
         animation: animate 5s linear infinite;
-
     }
 
     @keyframes animate
@@ -37,7 +37,6 @@
             transform: scale(1) translateY(0) rotate(180deg);
             opacity: 0%
         }
-
         10%
         {
             opacity: 100%
@@ -49,7 +48,7 @@
         }
         100%
         {
-            transform: scale(0.5) translateY(3000%) rotate(0deg);
+            transform: scale(0.5) translateY(500%) rotate(0deg);
             opacity: 0
         }
 
